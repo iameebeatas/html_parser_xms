@@ -32,7 +32,9 @@ user_profile = '60c083cd0000000001004031'
 # note_address = '63db8819000000001a01ead1'
 # note_address = '643568840000000013008920'
 # note_address = '63f31eab00000000130307a0'
-note_address = '641af50a0000000013008d2a'
+# note_address = '641af50a0000000013008d2a'
+note_address = '642e9878000000000703b65f'
+
 
 
 # https://www.xiaohongshu.com/explore/63db8819000000001a01ead1
@@ -61,6 +63,8 @@ print('')
 user_notes = xhs_client.get_user_notes(user_profile)
 print('-user_notes-',user_notes)
 print('')
+# raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+
 userNotesList = json.loads(user_notes)
 print('-userNotesList-',userNotesList)
 print('')
