@@ -20,10 +20,17 @@ xhs_client = XhsClient(cookie)
 
   
 
-user_profile = '5fe35d34000000000101dc95'
+# user_profile = '5fe35d34000000000101dc95'
+user_profile = '60c083cd0000000001004031'
+
+
+
+
 # note_address = '63db8819000000001a01ead1'
 # note_address = '643568840000000013008920'
-note_address = '63f31eab00000000130307a0'
+# note_address = '63f31eab00000000130307a0'
+note_address = '641af50a0000000013008d2a'
+
 
 # https://www.xiaohongshu.com/explore/63db8819000000001a01ead1
 # https://www.xiaohongshu.com/user/profile/5fe35d34000000000101dc95/643568840000000013008920
