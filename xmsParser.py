@@ -24,7 +24,8 @@ xhs_client = XhsClient(cookie)
   
 
 # user_profile = '5fe35d34000000000101dc95'
-user_profile = '60c083cd0000000001004031'
+# user_profile = '60c083cd0000000001004031'
+user_profile = '5f88fe630000000001005723'
 
 
 
