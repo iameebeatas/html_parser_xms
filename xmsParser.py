@@ -20,6 +20,8 @@ print('-note_info-',note_info)
 # get user info
 user_info = xhs_client.get_user_info("5ff0e6410000000001008400")
 print('-user_info-',user_info)
+user_info = xhs_client.get_user_info("5fe35d34000000000101dc95")
+print('-user_info-',user_info)
 
 
 # get user notes
