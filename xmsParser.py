@@ -11,7 +11,7 @@
 from xhs import FeedType, XhsClient
 
 cookie = ""
-xhs_client = XhsClient(cookie)
+xhs_client = XhsClient()
 
 # get note info
 note_info = xhs_client.get_note_by_id("63db8819000000001a01ead1")
