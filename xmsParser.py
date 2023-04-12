@@ -10,7 +10,7 @@
 
 from xhs import FeedType, XhsClient
 import json
-
+import time
 
 
 cookie = "xhsTrackerId=6de830e6-5db9-431c-8d4e-8005046b6530; xhsTrackerId.sig=QBeznnahHZY4E-avcAsclayg8oemuQrLbf1c27Igxvo; xhsTracker=url=explore&searchengine=google; xhsTracker.sig=MRMGzEloSNQs_DaToApEcOmFVQk1-ZoSYnPAaimmG8E; webBuild=2.0.5; a1=187735822e03o1gzi7ffersqmj0mbjv06tgru79f330000566482; webId=29c6a475a9c8204a4ac627cd643ce926; gid=yYWWq2YqKqK0yYWWq2YJJ9Wjd8qlyku3WiidkiqFMA6V8Fq86DVh878882KK4YJ8WKq8yqf8; gid.sign=Lr6cHgb9xmdt5bhvi6g8N6mIh5k=; xsecappid=xhs-pc-web; cache_feeds=[]; extra_exp_ids=yamcha_0327_clt,h5_1208_exp3,ques_clt2; extra_exp_ids.sig=-9P_FIY9nRpp4czlpi3JlPCL_zdr5ZMYd73Vy8sdzzY; websectiga=3fff3a6f9f07284b62c0f2ebf91a3b10193175c06e4f71492b60e056edcdebb2; sec_poison_id=87547850-7936-4bc6-a042-2be4bd480dba; web_session=040069b3b0459e3e7b5f286403364b393faac0"
@@ -69,7 +69,8 @@ print('-has_more-',userNotesList['has_more'])
 page = 2
 while True:
   if userNotesList['has_more'] :
-    print('还有用户的笔记')  
+    print('还有用户的笔记',page)
+    time.sleep(1)
     user_new_notes = xhs_client.get_user_notes(user_id=user_profile,cursor=userNotesList['cursor'])
     print('-user_new_notes-',user_new_notes)
     userNotesList = json.loads(user_new_notes)
