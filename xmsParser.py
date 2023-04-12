@@ -10,7 +10,7 @@
 
 from xhs import FeedType, XhsClient
 
-cookie = "please get cookie in website"
+cookie = ""
 xhs_client = XhsClient(cookie)
 
 # get note info
