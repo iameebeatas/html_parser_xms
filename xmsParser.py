@@ -39,23 +39,36 @@ note_address = '641af50a0000000013008d2a'
 note_info = xhs_client.get_note_by_id(note_address)
 print('-note_info-',note_info)
 
+print('')
+print('')
+print('')
+
 # get user info
 # user_info = xhs_client.get_user_info("5ff0e6410000000001008400")
 # print('-user_info-',user_info)
 user_info = xhs_client.get_user_info(user_profile)
 print('-user_info-',user_info)
 
+print('')
+print('')
+print('')
 
 # get user notes
 # user_notes = xhs_client.get_user_notes("63273a77000000002303cc9b")
 user_notes = xhs_client.get_user_notes(user_profile)
 print('-user_notes-',user_notes)
+print('')
+print('')
+print('')
 
 
 # search note
 # notes = xhs_client.get_note_by_keyword("小红书")
 # print('-search_notes-',notes)
 
+print('')
+print('')
+print('')
 
 # # get home recommend feed
 # recommend_type = FeedType.RECOMMEND
